@@ -1,3 +1,8 @@
+const http = require('http');
+http.createServer((req, res) => {
+  res.write('Lady Video Bot is Online 24/7!');
+  res.end();
+}).listen(process.env.PORT || 3000);
 const { Telegraf, Markup } = require('telegraf');
 
 const BOT_TOKEN = '8747879041:AAFWiAMd7eqcYu2kb3MbQ3ornqGRgfoD9bw';
